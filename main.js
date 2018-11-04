@@ -22,9 +22,9 @@ var userData =      null;
 var feed = new RSS({
     title: 'CSBlogs RSS Feed',
     description: 'description',
-    feed_url: 'http://127.0.0.1/rss.xml',
-    site_url: 'http://127.0.0.1',
-    image_url: 'http://127.0.0.1:3000/images/csblogs-logo-icon.png',
+    feed_url: 'https://csblogs.svc.na.thaniel.uk/feed.xml',
+    site_url: 'https://csblogs.svc.na.thaniel.uk/',
+    image_url: 'https://csblogs.svc.na.thaniel.uk/images/csblogs-logo-icon.png',
     docs: 'https://na.thaniel.uk/csblogs-rss',
     managingEditor: 'Nathaniel (na.thaniel.uk)',
     webMaster: 'Nathaniel (na.thaniel.uk) on behalf of CSBlogs',
@@ -35,7 +35,7 @@ var feed = new RSS({
 
 // JSON to RSS
 function dataToRSS(data) {
-  for (var i = 0; i < data.length; i++)
+  for (var i = 0; i < 30; i++)
   {
       feed.item({
           title:  data[i].title,
