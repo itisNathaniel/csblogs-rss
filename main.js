@@ -21,12 +21,12 @@ var userData =      null;
 // create RSS feed
 var feed = new RSS({
     title: 'CSBlogs RSS Feed',
-    description: 'description',
+    description: 'Built for and by Computer Scientists to share their blogs with each other and encourage sharing achievements and cool stuff within the community and beyond.',
     feed_url: 'https://csblogs.svc.na.thaniel.uk/feed.xml',
     site_url: 'https://csblogs.svc.na.thaniel.uk/',
     image_url: 'https://csblogs.svc.na.thaniel.uk/images/csblogs-logo-icon.png',
     docs: 'https://na.thaniel.uk/csblogs-rss',
-    managingEditor: 'Nathaniel (na.thaniel.uk)',
+    managingEditor: 'n@thaniel.uk',
     webMaster: 'Nathaniel (na.thaniel.uk) on behalf of CSBlogs',
     copyright: 'Individual Creators (and CSBlogs)',
     language: 'en',
