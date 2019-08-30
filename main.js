@@ -36,7 +36,7 @@ var feed = new RSS({
 
 // JSON to RSS
 function dataToRSS(data) {
-  for (var i = 0; i < 100; i++)
+  for (var i = 0; i < 40; i++)
   {
       var image = "<img src='" + (data[i].imageURI ? data[i].imageURI : tempImage) + "'/> ";
 
