@@ -17,6 +17,7 @@ const userUrl =    'http://api.csblogs.com/v2.0/user';
 const postUrl =    'http://api.csblogs.com/v2.0/post';
 var csblogsData =   null;
 var userData =      null;
+var tempImage =     'https://csblogs.svc.na.thaniel.uk/images/empty-banner.png'
 
 // create RSS feed
 var feed = new RSS({
@@ -37,9 +38,11 @@ var feed = new RSS({
 function dataToRSS(data) {
   for (var i = 0; i < 30; i++)
   {
+      var image = "<img src='" + (data[i].imageURI ? data[i].imageURI : tempImage) + "/>";
+
       feed.item({
           title:  data[i].title,
-          description: data[i].description,
+          description: image + data[i].description,
           url: data[i].link, // link to the item
           author: url.parse(data[i].link).hostname, //getUserByID(data.authorID), data.authorID, optional - defaults to feed author property
           date: data[i].datePublished, // any format that js Date can parse.
