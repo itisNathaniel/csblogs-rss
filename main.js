@@ -17,7 +17,7 @@ const userUrl =    'http://api.csblogs.com/v2.0/user';
 const postUrl =    'http://api.csblogs.com/v2.0/post';
 var csblogsData =   null;
 var userData =      null;
-var tempImage =     'https://csblogs.svc.na.thaniel.uk/images/empty-banner.png'
+var tempImage =     'https://csblogs.svc.na.thaniel.uk/images/emptybanner.png'
 
 // create RSS feed
 var feed = new RSS({
